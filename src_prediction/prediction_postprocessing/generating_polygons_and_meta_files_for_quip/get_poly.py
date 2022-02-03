@@ -27,7 +27,7 @@ def get_poly(pair):
             thre,img=cv2.threshold(img,210,255,cv2.THRESH_BINARY)
         else:
             print(argmax_name)
-            argmax_map = np.load(argmax_name)
+            argmax_map = np.load(argmax_name, allow_pickle=True)
             binary_mask = np.zeros((argmax_map.shape[-1],argmax_map.shape[-2])).astype('uint8')
             binary_mask[argmax_map[class_index] == 1]=255
             #cv2.imwrite('/gpfs/scratch/sabousamra/multiplex/u24_lymphocyte/data/seg_out/tmp/binary_'+os.path.basename(file_name)+str(stain_index)+'.png',binary_mask)
