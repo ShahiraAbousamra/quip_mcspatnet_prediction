@@ -6,7 +6,7 @@
 #### Required settings in `src_prediction/conf/variables.sh`
 
 `LYM_PREDICTION_BATCH_SIZE`: The batch size to use.  <br/>
-`BASE_DIR`=< The full path to the `u24_lymphocyte` directory > <br/>
+`BASE_DIR`=< The full path to the `src_prediction` directory > <br/>
 `OUT_DIR`=< The full path to the output directory > <br/>
 `PREDICTION_INTERMEDIATE_FOLDER`=< The full path for intermediate patch results > <br/>
 `POSTPROCESS_DIR`=< The full path for processed patch results > <br/>
